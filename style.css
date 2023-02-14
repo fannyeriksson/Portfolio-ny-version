@@ -1,0 +1,337 @@
+@import'https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    background-image: url(bakgrund.jpeg);
+    background-size: cover;
+    background-position: left;
+}
+
+   
+html{
+    font-family:'montserrat',sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+/*NAVBAR*/
+
+#mobile-nav{
+    display: none;
+}
+
+.nav-bar{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    list-style: none;
+    height: 10vh;
+    background-color: rgba(27, 27, 27, 0.348);
+    }
+
+    li a {
+        display: block;
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    .namn{
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    
+    /* Startsida*/
+
+    .container{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .image-container{
+        position: relative;
+        background-image: url(bakgrund.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 0vh;
+        animation: scale 30s;
+    }
+
+    @keyframes scale {
+        0% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(10, 10, 10, 10);
+        z-index: 0;
+    }
+
+    .start-text{
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        font-size: 28px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+    }
+
+    .CV-cta{
+        background-color: rgba(3, 3, 3, 0.2);
+        border: 2px solid var(--blue-text);
+        width: 175px;
+        padding: 30px;
+        margin-top: 20px;
+        box-shadow: -15px 7px 30px rgba(2, 3, 2, 0.5);
+    }
+
+    .CV{
+        color: rgb(255, 255, 255);
+    }
+
+    .CV-cta:hover{
+        background-color: rgba(10, 46, 14, 0.4);
+    }
+
+    /* PROJEKT*/
+
+    .projekt-container{
+        width: 100%;
+        height: auto;
+    }
+
+    .projekt-header{
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        color:#fff;
+        background-color: rgba(27, 27, 27, 0.159);
+        box-shadow: -15px 7px 30px rgba(27, 27, 27, 0.2);
+    }
+
+    .Projekt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+
+    .CarGo{
+        width: 400px;
+        height: 400px;
+        background: #fff;
+        position: relative;
+        box-shadow: -15px 7px 30px rgba(27, 27, 27, 0.2);
+        border-radius: 10px;
+        margin: 50px;
+        background-image: url(cargo.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .Flixtrain{
+        width: 400px;
+        height: 400px;
+        background: #fff;
+        position: relative;
+        box-shadow: -15px 7px 30px rgba(27, 27, 27, 0.2);
+        border-radius: 10px;
+        margin: 50px;
+        background-image: url(flixtrain.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .Okänt-projekt{
+        width: 400px;
+        height: 400px;
+        background: #fff;
+        position: relative;
+        box-shadow: -15px 7px 30px rgba(27, 27, 27, 0.2);
+        border-radius: 10px;
+        margin: 50px;
+        background-image: url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+        background-size: cover;
+        background-position: left center;
+    }
+
+  .text-container{
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+
+    .text-container:hover {
+        height: 250px;
+    }
+
+    .namn{
+        margin-top: 10px;
+        color: #020204;
+        font-size: 2rem;  
+        
+    }
+
+    .content{
+        padding: 25px 0;
+        color: #07090e; 
+    }
+
+    .button{
+        
+        border: 1px solid #32269b;
+        width: 160px;
+        box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* Om mig */
+    .Om-mig-container{
+        margin: 10%;
+        width: 80%;
+        height: auto;
+        background-color: rgba(27, 27, 27, 0.19);
+        box-shadow: -15px 7px 30px rgba(27, 27, 27, 1);
+    }
+
+    .Rubrik{
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        color:#fff;
+        background-color: rgba(27, 27, 27, 0.429);
+        box-shadow: -15px 7px 30px rgba(27, 27, 27, 0.2);
+
+    }
+
+    .om-mig-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+
+    .om-mig-bild{
+        height: 450px;
+        width: 400px;
+        background-image: url(profilbild.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .om-mig-text{
+        height: auto;
+        width: 50%;
+        font-size: 1.5rem;
+        margin-left: 100px;
+        color: #ffffff;
+    }
+
+    /* KONTAKT*/
+
+
+    .Kontakt-header{
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        color:#fff;
+        background-color: rgba(27, 27, 27, 0.4);
+        box-shadow: -15px 7px 30px rgba(27, 27, 27, 0.2);   
+    }
+
+    .kontakta-mig{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+
+.contact-form{
+    display: flex;
+   justify-content: center;
+   background-color: rgba(27, 27, 27, 0.348);
+   border-radius: 10px;
+   box-shadow: -15px 7px 30px rgba(27, 27, 27, 0.2);
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(40rem + 1vw);
+    background-color: rgba(27, 27, 27, 0.348);
+    box-shadow: -15px 7px 30px rgba(27, 27, 27, 0.2);
+}
+
+.contact-form input{
+    padding: 1rem;
+    height: 3rem;
+    color: #ffffff;
+    background-color: rgba(27, 27, 27, 0.348);
+    font-size:medium;
+    box-shadow: -15px 7px 30px rgba(27, 27, 27, 0.2);
+}
+
+.contact-form form textarea{
+    padding: 1rem;
+    height: 15rem;
+    color: #ffffff;
+    background-color: rgba(190, 184, 184, 0.01);
+    font-size:medium;
+    box-shadow: -15px 7px 30px rgba(72, 71, 71, 0.2);
+}
+    
+    
+
+.contact-form form input[type=skicka] {
+    background-color: #9bc09b;
+    text-transform: uppercase;
+    font-size: calc(1rem + 1vw);
+    cursor: pointer;
+    font-size: large;
+    box-shadow: -15px 7px 30px rgba(27, 27, 27, 0.2);
+}
