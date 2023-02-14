@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title> Fanny portfolio</title>
+</head>
+<body>
+
+<!-- NAVIGATIONSBAR -->
+<!--
+    - Använder section ID för att koden ska vara enklare att förstå (istället för div class)
+    - Ancänder UL till navbarens länkar för att den inte ska vara sorterad och gå att ändra 
+    - LI A = list items som är länkar 
+    - Använder #framför item för att kunna ändra färg på ena och inte andra -->
+
+<section id="nav">
+    <div class="nav-bar">
+        <div class="links">
+            <ul>
+                <li><a href="#namn" id="namn">Fanny Eriksson</a></li>
+                <li><a href="#projekt" id="projekt">Projekt</a></li>
+                <li><a href="#om-mig" id="om-mig">Om mig</a></li>
+                <li><a href="#kontakta-mig" id="kontakta-mig">Kontakta mig</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!--STARTSIDA-->
+<!--
+    - Använder span för att kunna styla första meningen i CSS, men låta resterande vara "vanlig". 
+    - Använder BR för att byta rad 
+    - Använder endast # som "länk" iom att ingen riktigt sida finns länkas 
+    - CV-CTA= Call To Action (klicka och ladda ned CV)
+    - Span här också för att kunna styla just den texten 
+    - Använder container för att det ska grupperas korrekt för en resposiv sida-->
+<section id="start">
+    <div class="container">
+        <div class="image-container">
+    </div>
+    <div class="start-text">
+        <h1>
+            <span class="firstword"> Välkommen till min portfolio! </span><br/>Ladda ned mitt CV eller
+            <br/> läs mer om mig här. 
+        </h1>
+        <a href="#" class="CV-cta"><span class="CV">Ladda ned CV</span></a>
+    </div>
+</section>
+
+
+
+<!--PROJEKT-->
+<!--
+    -Listar olika projekt i olika containrar.
+    - Använder a href # för att länka till projektet i Figma eller annan fil.-->
+<!--Projekt 1-->
+<section id="projekt">
+    <div class="projekt-container">
+        <div class="projekt-header">Projekt</div>
+        <div class="Projekt">
+            <div class="projekt-item">
+                <div class="CarGo">
+                    <div class="text-container">
+                        <h2 class="namn"> CarGo</h2>
+                        <div class="content">
+                            <p> 
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            </p>
+                        </div>
+                        <button class="button">
+                            <a href="#">
+                                <h3>Läs mer</h3>
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+<!--Projekt 2 -->
+            <div class="projekt item">
+                <div class="Flixtrain">
+                    <div class="text-container">
+                        <h2 class="namn">Flixtrain</h2>
+                        <div class="content">
+                            <p> 
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            </p>
+                        </div>
+                        <button class="button">
+                            <a href="#">
+                                <h3>Läs mer</h3>
+                    </div>
+
+                </div>
+            </div>
+
+<!--Projekt 3 -->
+<div class="projekt item">
+    <div class="Okänt-projekt">
+        <div class="text-container">
+            <h2 class="namn"> Okänt projekt</h2>
+            <div class="content">
+                <p> 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            </div>
+            <button class="button">
+                <a href="#">
+                    <h3>Läs mer</h3>
+                </a>
+                <br>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- OM MIG -->
+<!--
+    - Gör 2 container för att bilden och texten inte behöver vara brevid varandra-->
+
+<section id="Om-mig">
+    <h2 class="Rubrik"> Om mig</h2>
+    <div class="Om-mig-container">
+        <div class="om-mig-section">
+            <div class="img-container">
+                <div class="om-mig-bild"></div>
+                
+            </div>
+            <div class="om-mig-text">
+                Jag studerar till UX-desginer med kravkompetens på Chas Academy. 
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eius enim, deleniti doloribus ad soluta sed nesciunt esse qui reprehenderit velit vitae perferendis necessitatibus voluptatem quo ex impedit magnam autem?
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- KONTAKT SEKTION -->
+<!--
+    - Form action # eftersom att länken inte leder någonstans, kan också vara en länk
+    - Type för att sidan ska förstå vad för slags data som kommer fyllas i (tex text)
+    - Placeholder för att visa vad som ska skrivas in av den som besöker sidan, tex namn eller email 
+    - 
+-->
+
+<section id="Kontakt">
+    <div class="kontakt-container">
+        <div class="Kontakt-header">Kontakta mig</div>
+        <div class="Kontakta-mig"></div>
+
+
+<section class="contact-form">
+    <form action="#">
+        <input type="text" name="namn" placeholder="Ditt namn">
+        <input type="text" name="email" placeholder="Din mailadress">
+        <input type="text" name="ämne" placeholder="Ämne">
+        <textarea name="meddelande" placeholder="Meddelande"></textarea>
+        <input type="skicka" value="Skicka">
+        <br> <br>
+    </form>
+</section>
